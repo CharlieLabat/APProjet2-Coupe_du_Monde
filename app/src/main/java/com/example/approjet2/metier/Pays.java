@@ -1,27 +1,27 @@
 package com.example.approjet2.metier;
 
 public class Pays {
-    String ville; // Ville de l'équipe
+    String pays; // Ville de l'équipe
     int points; // Nombre de points d'un match
     int victoire; // Nombre de victoire
     int nul;  // Nombre de victoire
     int defaite;  // Nombre de victoire
 
 
-    public Pays(String ville, int points, int victoire, int nul, int defaite) {
-        this.ville = ville;
+    public Pays(String pays, int points, int victoire, int nul, int defaite) {
+        this.pays = pays;
         this.points = points;
         this.victoire = victoire;
         this.nul = nul;
         this.defaite = defaite;
     }
 
-    public String getVille() {
-        return ville;
+    public String getPays() {
+        return pays;
     }
 
-    public void setVille(String ville) {
-        this.ville = ville;
+    public void setPays(String pays) {
+        this.pays = pays;
     }
 
     public int getPoints() {
