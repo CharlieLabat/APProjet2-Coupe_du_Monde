@@ -10,4 +10,33 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:text="unPays" />
+
+    <TextView
+        android:id="@+id/idPoints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="desPoints" />
+
+    <TextView
+        android:id="@+id/idVictoire"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="uneVictoire" />
+
+    <TextView
+        android:id="@+id/idNul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="unNul" />
+
+    <TextView
+        android:id="@+id/idDefaite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="uneDefaite" />
+
 </LinearLayout>

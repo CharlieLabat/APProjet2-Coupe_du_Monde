@@ -30,6 +30,7 @@ public class PaysActivity extends AppCompatActivity {
         lesPays.add(pays3);
         adapter = new PaysAdapter(lesPays);
         recyclerView = findViewById(R.id.listPays);
+        recyclerView.setHasFixedSize(true);
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setAdapter(adapter);

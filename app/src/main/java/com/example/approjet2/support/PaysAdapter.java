@@ -30,11 +30,18 @@ public class PaysAdapter extends RecyclerView.Adapter {
 
     @Override
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
-
+        Pays lePays = lesPays.get(position);
+        ((PaysViewHolder) holder).remplirViewHolder(lePays,position);
     }
 
     @Override
     public int getItemCount() {
-        return 0;
+        if (lesPays != null){
+            return lesPays.size();
+        }
+        else {
+            return 0;
+        }
+
     }
 }
