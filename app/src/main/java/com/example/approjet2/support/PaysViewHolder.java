@@ -27,12 +27,12 @@ public class PaysViewHolder extends RecyclerView.ViewHolder {
 
     }
     public void remplirViewHolder(Pays lePays, int position ){
-        String unPays = position+"  "+lePays.getPays();
+        String unPays = (position+1)+"  "+lePays.getPays();
         String desPoints = Integer.toString(lePays.getPoints()) ;
         String uneVictoire = Integer.toString(lePays.getVictoire());
         String unNul = Integer.toString( lePays.getNul());
         String uneDefaite = Integer.toString(lePays.getDefaite()) ;
-        Log.i("ViewHolder","Postion du clic : "+position);
+        //Log.i("ViewHolder","Postion du clic : "+position);
         idPays.setText(unPays);
         idPoints.setText(desPoints);
         idVictoire.setText(uneVictoire);

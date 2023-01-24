@@ -1,42 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
     <TextView
-        android:id="@+id/idPays"
+        android:id="@+id/idPays1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="unPays" />
+        android:text="P1" />
 
     <TextView
-        android:id="@+id/idPoints"
+        android:id="@+id/idPaysScore1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="desPoints" />
+        android:text="PS1" />
 
     <TextView
-        android:id="@+id/idVictoire"
+        android:id="@+id/idPaysScore2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="uneVictoire" />
+        android:text="PS2" />
 
     <TextView
-        android:id="@+id/idNul"
+        android:id="@+id/idPays2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="unNul" />
-
-    <TextView
-        android:id="@+id/idDefaite"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:text="uneDefaite" />
-
+        android:text="P2" />
 </LinearLayout>

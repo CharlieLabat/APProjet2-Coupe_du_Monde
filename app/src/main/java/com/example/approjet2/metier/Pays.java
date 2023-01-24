@@ -55,4 +55,15 @@ public class Pays {
     public void setDefaite(int defaite) {
         this.defaite = defaite;
     }
+
+    @Override
+    public String toString() {
+        return "Pays{" +
+                "pays='" + pays + '\'' +
+                ", points=" + points +
+                ", victoire=" + victoire +
+                ", nul=" + nul +
+                ", defaite=" + defaite +
+                '}';
+    }
 }
