@@ -1,6 +1,8 @@
 package com.example.approjet2;
 
 import android.os.Bundle;
+import android.util.Log;
+import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -17,6 +19,8 @@ import java.util.List;
 public class ResultatActivity extends AppCompatActivity {
 
     List<Resultat> lesResultats = new ArrayList<Resultat>();
+    private TextView idJour;
+    private TextView idDate;
 
 
 
@@ -24,6 +28,9 @@ public class ResultatActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.resultat_view);
+        idJour = findViewById(R.id.idJour);
+        idDate = findViewById(R.id.idDate);
+
         RecyclerView recyclerView;
         RecyclerView.Adapter adapter;
         RecyclerView.LayoutManager layoutManager;
@@ -33,8 +40,13 @@ public class ResultatActivity extends AppCompatActivity {
         lesResultats.add(res1);
         lesResultats.add(res2);
         lesResultats.add(res3);
+        String uneDate ="("+res1.getDate()+")" ;
+        String uneJournee =": "+1;
+        idDate.setText(uneDate);
+        idJour.setText(uneJournee);
         adapter = new ResultatAdapter(lesResultats);
         recyclerView = findViewById(R.id.listRes);
+
         recyclerView.setHasFixedSize(true);
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);

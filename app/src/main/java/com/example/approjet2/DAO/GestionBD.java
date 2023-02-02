@@ -21,6 +21,7 @@ public class GestionBD {
         base.close();
     }
     public void ajoutePays(Pays unPays){
+
         ContentValues contentValues = new ContentValues();
 
     }

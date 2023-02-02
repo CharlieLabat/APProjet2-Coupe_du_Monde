@@ -15,8 +15,10 @@ public class BDHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
-        String req ="CREATE TABLE pays (ville TEXT, points INTEGER, victoire INTEGER, nul INTEGER, defaite INTERGER);";
-        sqLiteDatabase.execSQL(req);
+        String req1 ="CREATE TABLE pays (ville TEXT, points INTEGER, victoire INTEGER, nul INTEGER, defaite INTERGER);" ;
+        String req2 ="CREATE TABLE resultat (pays1 INTEGER, scoreEq1 INTEGER, scoreEq2 INTEGER, pays2 INTEGER, dateMatch DATE);";
+        sqLiteDatabase.execSQL(req1);
+        sqLiteDatabase.execSQL(req2);
     }
 
     @Override
