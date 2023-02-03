@@ -28,8 +28,8 @@ public class ResultatViewHolder extends RecyclerView.ViewHolder {
     }
 
     public void remplirViewHolder(Resultat leResultat, int position) {
-        String unPays1 = "FRA";
-        String unPays2 = "USA";
+        String unPays1 = leResultat.getPays1();
+        String unPays2 = leResultat.getPays2();
         String unScore1 = " "+leResultat.getScoreEq1();
         String unScore2 = leResultat.getScoreEq2()+" ";
 

@@ -3,11 +3,15 @@ package com.example.approjet2.metier;
 import java.util.Date;
 
 public class Resultat {
+    String pays1;
+    String pays2;
     int scoreEq1;
     int scoreEq2;
     Date date;
 
-    public Resultat(int scoreEq1, int scoreEq2, Date date) {
+    public Resultat(String pays1, String pays2, int scoreEq1, int scoreEq2, Date date) {
+        this.pays1 = pays1;
+        this.pays2 = pays2;
         this.scoreEq1 = scoreEq1;
         this.scoreEq2 = scoreEq2;
         this.date = date;
@@ -35,5 +39,21 @@ public class Resultat {
 
     public void setDate(Date date) {
         this.date = date;
+    }
+
+    public String getPays1() {
+        return pays1;
+    }
+
+    public void setPays1(String pays1) {
+        this.pays1 = pays1;
+    }
+
+    public String getPays2() {
+        return pays2;
+    }
+
+    public void setPays2(String pays2) {
+        this.pays2 = pays2;
     }
 }

@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.approjet2.DAO.GestionBD;
 import com.example.approjet2.metier.Resultat;
 import com.example.approjet2.support.ResultatAdapter;
 
@@ -21,7 +22,7 @@ public class ResultatActivity extends AppCompatActivity {
     List<Resultat> lesResultats = new ArrayList<Resultat>();
     private TextView idJour;
     private TextView idDate;
-
+    GestionBD bd = new GestionBD(this);
 
 
     @Override
@@ -34,9 +35,9 @@ public class ResultatActivity extends AppCompatActivity {
         RecyclerView recyclerView;
         RecyclerView.Adapter adapter;
         RecyclerView.LayoutManager layoutManager;
-        Resultat res1 = new Resultat(7,5,new Date());
-        Resultat res2 = new Resultat(2,5,new Date());
-        Resultat res3 = new Resultat(2,6,new Date());
+        Resultat res1 = new Resultat("FRA","USA",7,5,new Date());
+        Resultat res2 = new Resultat("GER","ANG",2,5,new Date());
+        Resultat res3 = new Resultat("ESP","POR",2,6,new Date());
         lesResultats.add(res1);
         lesResultats.add(res2);
         lesResultats.add(res3);
@@ -44,6 +45,7 @@ public class ResultatActivity extends AppCompatActivity {
         String uneJournee =": "+1;
         idDate.setText(uneDate);
         idJour.setText(uneJournee);
+
         adapter = new ResultatAdapter(lesResultats);
         recyclerView = findViewById(R.id.listRes);
 

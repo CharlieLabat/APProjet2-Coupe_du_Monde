@@ -1,0 +1,76 @@
+{
+	"pays":[
+		{
+        "id": "1",
+        "pays": "FR",
+        "journee": "3",
+        "points": "9",
+        "victoire": "3",
+        "nul": "0",
+        "defaite": "0"
+    },
+    {
+        "id": "2",
+        "pays": "ARG",
+        "journee": "3",
+        "points": "9",
+        "victoire": "3",
+        "nul": "0",
+        "defaite": "0"
+    },
+    {
+        "id": "3",
+        "pays": "BR",
+        "journee": "3",
+        "points": "9",
+        "victoire": "3",
+        "nul": "0",
+        "defaite": "0"
+    },
+    {
+        "id": "4",
+        "pays": "ANG",
+        "journee": "3",
+        "points": "9",
+        "victoire": "3",
+        "nul": "0",
+        "defaite": "0"
+    },
+    {
+        "id": "5",
+        "pays": "ALL",
+        "journee": "3",
+        "points": "9",
+        "victoire": "3",
+        "nul": "0",
+        "defaite": "0"
+    },
+    {
+        "id": "6",
+        "pays": "ESP",
+        "journee": "3",
+        "points": "9",
+        "victoire": "3",
+        "nul": "0",
+        "defaite": "0"
+    },
+    {
+        "id": "7",
+        "pays": "CR",
+        "journee": "3",
+        "points": "9",
+        "victoire": "3",
+        "nul": "0",
+        "defaite": "0"
+    },
+    {
+        "id": "8",
+        "pays": "SEN",
+        "journee": "3",
+        "points": "9",
+        "victoire": "3",
+        "nul": "0",
+        "defaite": "0"
+    }
+	]
+}
