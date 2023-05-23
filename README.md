@@ -3,8 +3,9 @@
 ## Coupe du Monde (Application Android en Java)
 
 
-*Chemin de la source :* ***/app/src/main/ *** 
+*Chemin de la source :* ***/app/src/main/*** 
 
+*Chemin du APK :* ***/app/build/apk/***
 ---
 
 #### Coder par :
